@@ -1,0 +1,31 @@
+# .gitignore for project root directories. Tries to ignore all files that may contain too much data
+# for a git repository, i.e. raw sequences, fasta files and some other.
+biomakefiles
+RAxML_bootstrap*
+*.bt2
+*.daa
+*.dmnd
+*.ebh
+*.err
+*.faa
+*.fastq*
+!*.fastq*.makecall
+*.fna
+*.gz
+*.pdf
+*.maf
+*.maf.gz
+.RData
+.Rhistory 
+.Rproj.user
+*.8mer*
+silva.mothur.nr.*
+*.zip
+*.rds
+*.qza
+*_report_cache*
+*.feather
+_cache
+.*.sw?
+.~*#
+*.html
