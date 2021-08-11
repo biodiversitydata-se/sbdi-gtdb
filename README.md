@@ -35,7 +35,8 @@ Sequences aligning to fewer than 1000 bases of their respective profile in both 
 For the sequences passing the above filters, the longest sequence in each genome was kept. 
 For each species, a maximum of 5 sequences was selected, prioritizing sequences from GTDB species-representative genomes, and longer sequences before shorter. 
 The remaining sequences were then analyzed with Sativa (Kozlov et al. 2016) and sequences misclassified at genus to phylum level were removed.
-A Perl script for conducting filtering of sequences prior to and after Sativa analysis can be found in the Scripts folder. Run `perl select_seq_sativa.pl --h` for documentation. 
+A Perl script for conducting filtering of sequences prior to and after Sativa analysis can be found in the Scripts folder in the GitHub repo: https://github.com/biodiversitydata-se/sbdi-gtdb. 
+Run `perl select_seq_sativa.pl --h` for documentation. 
 
 ## References
 
