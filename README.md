@@ -20,8 +20,9 @@ Please cite as: Swedish Biodiversity Infrastructure (SBDI; 2021). SBDI Sativa cu
 
 The data in this repository is the result of vetting 16S sequences from the GTDB database release R06-RS202 (https://gtdb.ecogenomic.org/; Parks et al. 2018) with the Sativa program (Kozlov et al. 2016).
 
-Files for the DADA2 (Callahan et al. 2016) methods `assignTaxonomy` and `addSpecies` are available.
-Both files are gzipped fasta files with 16S sequences, the assignTaxonomy associated with taxonomy hierarchies from domain to genus whereas the addSpecies file have sequence identities and species names.
+Files for the DADA2 (Callahan et al. 2016) methods `assignTaxonomy` and `addSpecies` are available: gtdb-sbdi-sativa.r06rs202.assignTaxonomy.fna.gz and gtdb-sbdi-sativa.r06rs202.addSpecies.fna.gz.
+There is also a fasta file with the original GTDB sequence names: gtdb-sbdi-sativa.r06rs202.fna.gz
+All three files are gzipped fasta files with 16S sequences, the assignTaxonomy associated with taxonomy hierarchies from domain to genus whereas the addSpecies file have sequence identities and species names.
 
 Taxonomical annotation of 16S amplicons using this data is available as an optional argument to the nf-core/ampliseq Nextflow workflow from version 2.1: `--dada_ref_taxonomy sbdi-gtdb` (https://nf-co.re/ampliseq; Straub et al. 2020).
 
