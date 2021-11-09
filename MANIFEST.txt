@@ -1,5 +1,5 @@
 README.md (4.18 KiB)
 
-gtdb-sbdi-sativa.r06rs202.addSpecies.fna.gz (11.33 MiB)
-gtdb-sbdi-sativa.r06rs202.assignTaxonomy.fna.gz (10.69 MiB)
+gtdb-sbdi-sativa.r06rs202.addSpecies.fna.gz (10.8 MiB)
+gtdb-sbdi-sativa.r06rs202.assignTaxonomy.fna.gz (10.19 MiB)
 gtdb-sbdi-sativa.r06rs202.fna.gz (12.29 MiB)
