@@ -29,3 +29,5 @@ _cache
 .*.sw?
 .~*#
 *.html
+rackham_download
+tmp/

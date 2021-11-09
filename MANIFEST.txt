@@ -1,5 +1,7 @@
-README.md (4.18 KiB)
-
-gtdb-sbdi-sativa.r06rs202.addSpecies.fna.gz (11.33 MiB)
-gtdb-sbdi-sativa.r06rs202.assignTaxonomy.fna.gz (10.69 MiB)
-gtdb-sbdi-sativa.r06rs202.fna.gz (12.29 MiB)
+README.txt (5.1 KiB)
+gtdb-sbdi-sativa.r07rs207.5genomes.addSpecies.fna.gz (14 MiB)
+gtdb-sbdi-sativa.r07rs207.5genomes.assignTaxonomy.fna.gz (13 MiB)
+gtdb-sbdi-sativa.r07rs207.1genome.addSpecies.fna.gz (11 MiB)
+gtdb-sbdi-sativa.r07rs207.1genome.assignTaxonomy.fna.gz (11 MiB)
+gtdb-sbdi-sativa.r07rs207.20genomes.addSpecies.fna.gz (14 MiB)
+gtdb-sbdi-sativa.r07rs207.20genomes.assignTaxonomy.fna.gz (14 MiB)
