@@ -24,7 +24,7 @@ Files for the DADA2 (Callahan et al. 2016) methods `assignTaxonomy` and `addSpec
 The `assignTaxonomy` files contain taxonomy for domain, phylum, class, order, family, genus and species.
 (Note that it has been proposed that species assignment for short 16S sequences require 100% identity (Edgar 2018), so use species assignments with `assignTaxonomy with caution.)
 The versions differ in the maximum number of genomes that we included per species: 1, 5 or 20, indicated by "1genome", "5genomes" and "20genomes" in the file names respectively.
-Using the version with 20 genomes per species should increase the chances to identify an exactly matching sequence by the `addSpecies` algorithm, while using a file with many genomes per species could potentially give biases in the taxonomic annotations at higher levels by `assignTaxonomy`.
+Using the version with 20 genomes per species should increase the chances to identify an exactly matching sequence by the `addSpecies` algorithm, while using a file with many genomes per species could potentially give biases in the taxonomic annotations at higher levels by `assignTaxonomy` .
 
 There is also a fasta file with the original GTDB sequence names: gtdb-sbdi-sativa.r207.fna.gz
 All files are gzipped fasta files with 16S sequences, the assignTaxonomy associated with taxonomy hierarchies from domain to species whereas the addSpecies file have sequence identities and species names.
