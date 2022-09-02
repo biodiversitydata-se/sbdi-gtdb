@@ -18,7 +18,7 @@ Please cite as: Swedish Biodiversity Infrastructure (SBDI; 2021). SBDI Sativa cu
 
 ## Dataset description
 
-The data in this [repository](https://scilifelab.figshare.com/articles/dataset/SBDI_Sativa_curated_16S_GTDB_database/14869077) is the result of vetting 16S sequences from the GTDB database release r207 (https://gtdb.ecogenomic.org/; Parks et al. 2018) with the Sativa program (Kozlov et al. 2016).
+The data in this [repository](https://doi.org/10.17044/scilifelab.14869077) is the result of vetting 16S sequences from the GTDB database release r207 (https://gtdb.ecogenomic.org/; Parks et al. 2018) with the Sativa program (Kozlov et al. 2016).
 
 Files for the DADA2 (Callahan et al. 2016) methods `assignTaxonomy` and `addSpecies` are available, in three different versions each.
 The `assignTaxonomy` files contain taxonomy for domain, phylum, class, order, family, genus and species.
