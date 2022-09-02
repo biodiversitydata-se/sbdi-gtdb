@@ -45,6 +45,12 @@ For the remaining sequences, for each species, a maximum of 1, 5 and 20 sequence
 A Perl script for conducting filtering of sequences prior to and after Sativa analysis can be found in the `scripts` folder in the GitHub repo: https://github.com/biodiversitydata-se/sbdi-gtdb. 
 Run `perl select_seq_sativa.pl --h` for documentation. 
 
+## Version history
+
+* v5 (20220902): Update README (this document)
+
+* v4 (20220831): Update to GTDB R07-RS207 from R06-RS202
+
 ## References
 
 Callahan, Benjamin J., Paul J. McMurdie, Michael J. Rosen, Andrew W. Han, Amy Jo A. Johnson, and Susan P. Holmes. 2016. “DADA2: High-Resolution Sample Inference from Illumina Amplicon Data.” Nature Methods 13 (7): 581–83. https://doi.org/10.1038/nmeth.3869.
