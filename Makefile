@@ -3,11 +3,11 @@ GTDB_RELEASE = 207
 ASSIGN_TAXONOMY = gunzip -c $^ | sed 's/Reversed: *//' | sed '/^>/s/>[^ ]\+ \([^[]\+\) \[.*/>\1/' | sed '/^>/s/ \[.*//' | sed 's/[a-z]__//g' | sed '/^>/s/\(Archaea\)\|\(Bacteria\)/&;&/' | gzip -c > $@
 ADD_SPECIES     = gunzip -c $^ | sed 's/Reversed: *//' | sed '/^>/s/>\([^ ]\+\) .*;s__\([^[]\+\) \[.*/>\1 \2/' | gzip -c > $@
 
-all_gtdb-sbdi.r207: all_gtdb-sbdi.207.assignTaxonomy all_gtdb-sbdi.207.addSpecies
+all_gtdb-sbdi.r07rs207: all_gtdb-sbdi.207.assignTaxonomy all_gtdb-sbdi.207.addSpecies gtdb-sbdi-sativa.r07rs207.20genomes.fna.gz MANIFEST.txt
 
-all_gtdb-sbdi.207.assignTaxonomy: gtdb-sbdi-sativa.r207.1genome.assignTaxonomy.fna.gz gtdb-sbdi-sativa.r207.5genomes.assignTaxonomy.fna.gz gtdb-sbdi-sativa.r207.20genomes.assignTaxonomy.fna.gz
+all_gtdb-sbdi.207.assignTaxonomy: gtdb-sbdi-sativa.r07rs207.1genome.assignTaxonomy.fna.gz gtdb-sbdi-sativa.r07rs207.5genomes.assignTaxonomy.fna.gz gtdb-sbdi-sativa.r07rs207.20genomes.assignTaxonomy.fna.gz
 
-all_gtdb-sbdi.207.addSpecies: gtdb-sbdi-sativa.r207.1genome.addSpecies.fna.gz gtdb-sbdi-sativa.r207.5genomes.addSpecies.fna.gz gtdb-sbdi-sativa.r207.20genomes.addSpecies.fna.gz
+all_gtdb-sbdi.207.addSpecies: gtdb-sbdi-sativa.r07rs207.1genome.addSpecies.fna.gz gtdb-sbdi-sativa.r07rs207.5genomes.addSpecies.fna.gz gtdb-sbdi-sativa.r07rs207.20genomes.addSpecies.fna.gz
 
 rackham_download:
 	for n in 1 5 20; do \
@@ -34,6 +34,9 @@ gtdb-sbdi-sativa.r07rs207.5genomes.addSpecies.fna.gz: $(wildcard *.hmmer.rfmask.
 
 gtdb-sbdi-sativa.r07rs207.20genomes.addSpecies.fna.gz: $(wildcard *.hmmer.rfmask.sativafilt20pt.fna.gz)
 	$(ADD_SPECIES)
+
+gtdb-sbdi-sativa.r07rs207.20genomes.fna.gz: $(wildcard *r207.hmmer.rfmask.sativafilt20pt.fna.gz)
+	cat $^ > $@
 
 MANIFEST.txt: README.txt $(wildcard gtdb-sbdi-sativa.r07rs207.*.fna.gz)
 	for f in $^; do \

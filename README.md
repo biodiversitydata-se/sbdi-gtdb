@@ -26,7 +26,8 @@ The `assignTaxonomy` files contain taxonomy for domain, phylum, class, order, fa
 The versions differ in the maximum number of genomes that we included per species: 1, 5 or 20, indicated by "1genome", "5genomes" and "20genomes" in the file names respectively.
 Using the version with 20 genomes per species should increase the chances to identify an exactly matching sequence by the `addSpecies` algorithm, while using a file with many genomes per species could potentially give biases in the taxonomic annotations at higher levels by `assignTaxonomy`.
 
-There is also a fasta file with the original GTDB sequence names: gtdb-sbdi-sativa.r207.fna.gz.
+There is also a fasta file with the original GTDB sequence names: gtdb-sbdi-sativa.r07rs207.20genomes.fna.gz.
+
 All files are gzipped fasta files with 16S sequences, the assignTaxonomy associated with taxonomy hierarchies from domain to species whereas the `addSpecies` file have sequence identities and species names.
 
 Taxonomical annotation of 16S amplicons using this data is available as an optional argument to the nf-core/ampliseq Nextflow workflow from version 2.1: `--dada_ref_taxonomy sbdi-gtdb` (https://nf-co.re/ampliseq; Straub et al. 2020).
@@ -46,6 +47,8 @@ A Perl script for conducting filtering of sequences prior to and after Sativa an
 Run `perl select_seq_sativa.pl --h` for documentation. 
 
 ## Version history
+
+* v6 (20221007): Add missing fasta file with original GTDB names.
 
 * v5 (20220902): Update README (this document)
 
