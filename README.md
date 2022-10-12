@@ -48,9 +48,7 @@ Run `perl select_seq_sativa.pl --h` for documentation.
 
 ## Version history
 
-* v6 (20221007): Add missing fasta file with original GTDB names.
-
-* v5 (20220902): Update README (this document)
+* v5 (20221007): Add missing fasta file with original GTDB names.
 
 * v4 (20220831): Update to GTDB R07-RS207 from R06-RS202
 
